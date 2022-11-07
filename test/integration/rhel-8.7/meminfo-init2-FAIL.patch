@@ -1,6 +1,11 @@
 diff -Nupr src.orig/fs/proc/meminfo.c src/fs/proc/meminfo.c
+<<<<<<< HEAD
 --- src.orig/fs/proc/meminfo.c	2022-10-24 15:41:08.859760050 -0400
 +++ src/fs/proc/meminfo.c	2022-10-24 15:41:45.332185802 -0400
+=======
+--- src.orig/fs/proc/meminfo.c	2022-04-29 16:08:21.409780550 -0400
++++ src/fs/proc/meminfo.c	2022-04-29 16:08:58.219911544 -0400
+>>>>>>> 990e8b6 (test/integreation: copy 8.6 test to 8.7)
 @@ -41,6 +41,7 @@ static int meminfo_proc_show(struct seq_
  	unsigned long sreclaimable, sunreclaim;
  	int lru;
