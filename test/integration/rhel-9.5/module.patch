@@ -29,8 +29,8 @@ diff -Nupr src.orig/fs/nfsd/export.c src/fs/nfsd/export.c
 +{
 +	static DEFINE_STATIC_KEY_TRUE(kpatch_key);
 +
-+	if (static_branch_unlikely(&memcg_bpf_enabled_key))
-+		printk("kpatch: memcg_bpf_enabled_key\n");
++	if (static_branch_unlikely(&memcg_kmem_enabled_key))
++		printk("kpatch: memcg_kmem_enabled_key\n");
 +
 +	BUG_ON(!static_branch_likely(&kpatch_key));
 +	static_branch_disable(&kpatch_key);
